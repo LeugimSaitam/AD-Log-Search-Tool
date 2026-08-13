@@ -27,8 +27,8 @@ DATE_RE = r'(?P<date>\d{2}[/-]\d{2}[/-]\d{4})'
 TIME_RE = r'(?P<time>\d{1,2}:\d{2}:\d{2}(?:[,\.]\d{1,6})?)'
 
 # Formatos de LOG de COMPUTADOR:
-# Ex.: "Log In: afn ON Z2-0001167 with IP 10.0.0.10 at 14/05/2025  7:35:28,92"
-# Ex.: "Log Off afn 14/05/2025 17:02:00,94"
+# Ex.: "Log In: teste ON pc-teste12 with IP xxx.xxx.xxx.xxx at 14/05/2025  7:35:28,92"
+
 RE_LOGIN_COMP = re.compile(
     rf'^Log\s*In:?\s+(?P<user>\S+)\s+ON\s+(?P<pc>\S+)\s+with\s+IP\s+(?P<ip>\S+)\s+at\s+{DATE_RE}\s+{TIME_RE}\s*$',
     re.IGNORECASE
@@ -39,8 +39,8 @@ RE_LOGOFF_COMP = re.compile(
 )
 
 # Formatos de LOG de UTILIZADOR:
-# Ex.: "Log In: AF-0000017 10.70.34.53 13/11/2024  7:57:44,65"
-# Ex.: "Log Off AF-0000017 13/11/2024 13:13:29,33"
+# Ex.: "Log In: 
+# Ex.: "Log Off 
 RE_LOGIN_USER = re.compile(
     rf'^Log\s*In:?\s+(?P<pc>\S+)\s+(?P<ip>\S+)\s+{DATE_RE}\s+{TIME_RE}\s*$',
     re.IGNORECASE
