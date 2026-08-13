@@ -23,6 +23,12 @@ Python application developed to simplify the search and analysis of Active Direc
 - CSV Export
 - Windows Administration
 
+## Screenshots
+
+
+<img width="995" height="651" alt="image" src="https://github.com/user-attachments/assets/a23c9434-5cab-4d4e-b1a6-eb1d7d5b47d4" />
+
+
 ## Purpose
 
 This tool was designed to help IT support teams quickly identify user logon and logoff activity by analyzing central log repositories and presenting the information in a user-friendly interface.
